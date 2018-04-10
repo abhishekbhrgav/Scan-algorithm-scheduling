@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<conio.h>
 int main()
@@ -17,18 +16,17 @@ int main()
 	{
 		scanf("%d",&process[i]);
 	}
-	
-		for(i=0;i<(number-1);i++)
-		{
-			for(j=0;j<(number-i-1);j++)
-			{
-				if(process[j]>process[j+1])
-				{
-				t=process[j];
-		 	    process[j]=process[j+1];
-		 	    process[j+1]=t;
-				}	
-			}	
+	    for(i=0;i<(number-1);i++)
+	    {
+	    	for(j=0;j<(number-i-1);j++)
+	    	{
+	    		if(process[j]>process[j+1])
+	    		{
+	    			t=process[j];
+	    			process[j]=process[j+1];
+	    			process[j+1]=t;
+				}
+			}
 		}
 		if(current>previous)
 		{
