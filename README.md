@@ -1,6 +1,5 @@
 
 #include<stdio.h>
-#include<conio.h>
 int main()
 {
 	int number,head,previous,current,i,t,j,n,value1=0,value2=0,value=0,ar=0;
